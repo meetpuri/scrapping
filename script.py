@@ -10,7 +10,7 @@ driver = webdriver.Chrome(chromedriver)
 driver.get("https://selvbetjening.trafikstyrelsen.dk/Sider/resultater.aspx")
 driver.maximize_window()
 elem = driver.find_element_by_id("ctl00_m_g_6f9923c7_5864_4e71_bcd8_017cfab1946d_ctl00_ctl00_txtRegNo")
-elem.send_keys('ah12712')
+elem.send_keys('')
 elem.send_keys(Keys.RETURN)
 
 element = driver.page_source
